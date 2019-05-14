@@ -49,7 +49,9 @@
     <Compile Include="Factories\TraderFactory.cs" />
     <Compile Include="Factories\WorldFactory.cs" />
     <Compile Include="Models\GameItem.cs" />
+    <Compile Include="Models\GroupedInventoryItem.cs" />
     <Compile Include="Models\ItemQuantity.cs" />
+    <Compile Include="Models\LivingEntity.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Monster.cs" />
     <Compile Include="Models\MonsterEncounter.cs" />
