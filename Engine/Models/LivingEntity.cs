@@ -19,6 +19,7 @@ namespace Engine.Models
         private int _maximumManaPoints;
         private int _maximumStaminaPoints;
         private int _gold;
+        private int _level;
 
         public string Name
         {
@@ -63,7 +64,7 @@ namespace Engine.Models
         public int MaximumHitPoints
         {
             get { return _maximumHitPoints; }
-            private set
+            protected set
             {
                 _maximumHitPoints = value;
                 OnPropertyChanged();
@@ -73,7 +74,7 @@ namespace Engine.Models
         public int MaximumManaPoints
         {
             get { return _maximumManaPoints; }
-            private set
+            protected set
             {
                 _maximumManaPoints = value;
                 OnPropertyChanged();
@@ -83,7 +84,7 @@ namespace Engine.Models
         public int MaximumStaminaPoints
         {
             get { return _maximumStaminaPoints; }
-            private set
+            protected set
             {
                 _maximumStaminaPoints = value;
                 OnPropertyChanged();
@@ -96,6 +97,16 @@ namespace Engine.Models
             private set
             {
                 _gold = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public int Level
+        {
+            get { return _level; }
+            protected set
+            {
+                _level = value;
                 OnPropertyChanged();
             }
         }
