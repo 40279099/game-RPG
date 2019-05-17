@@ -187,7 +187,7 @@
                 </Grid.ColumnDefinitions>
 
                 <ComboBox Grid.Row="0" Grid.Column="0" ItemsSource="{Binding CurrentPlayer.Weapons}"
-                          SelectedItem="{Binding CurrentWeapon}"
+                          SelectedItem="{Binding CurrentWeapon.CurrentWeapon}"
                           DisplayMemberPath="Name" SelectedValuePath="ID"/>
 
                 <Button Grid.Row="0" Grid.Column="2" Content="Use" Click="OnClick_AttackMonster"/>
